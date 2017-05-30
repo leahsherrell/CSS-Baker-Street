@@ -11,6 +11,14 @@
 
 /* End for testing */
 
+#page {
+  /*background-image: url("img/rag.png");
+  repeat: repeat-x;
+      >>>>above not working
+  */
+  padding: 2em .8em;
+}
+
 *,
 *::before,
 *::after {
@@ -19,5 +27,72 @@
             box-sizing: border-box;
 }
 
+.inner {
+  position: relative;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  .quote::before {
+    content: url("../img/logo.png");
+    display: block;
+    overflow: auto;
+    clear: both;
+    padding: 18px;
+  }
+
+  .nav li {
+    font-size: 11px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 20px;
+    max-height: 45px;
+    width: 33.33%;
+  }
+
+  .second-part {
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 22px;
+  }
+
+  .mast {
+    overflow: auto;
+    text-align: center;
+  }
+
+  p.main {
+    text-align: left;
+  }
+
+  .sub-head {
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .characters li {
+    max-width: 50%;
+    padding: 3px;
+  }
+
+  .characters img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
 /*media queries at end of file*/
