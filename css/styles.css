@@ -27,10 +27,6 @@
             box-sizing: border-box;
 }
 
-.inner {
-  position: relative;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -41,25 +37,92 @@ ul {
   float: left;
   display: inline;
 }
-/*LARGE-ISH SCREEN*/
+
+img {
+  max-width: 100%;
+}
+
+.main p{
+  text-align: left;
+}
+
+.logo-bg {
+  position: relative;
+}
 
 @media screen and (max-width: 1300px) {
-  /*.nav {
-    float: left;
+
+    .characters img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .characters li {
+      max-width: 33%;
+      padding: 3px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+  body {
+    text-align: center;
   }
-  .nav::before {
-    content: url("../img/logo.png");
+
+  .quote {
+    font-size: 30px;
+  }
+
+  .logo {
+    background-image: url("../img/logo-bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 279px;
+    top: 0px;
+    vertical-align: middle;
+  }
+
+  .logo img {
+    display: block;
+    margin: auto;
+  }
+
+  .characters li {
+    display: block;
+  }
+  .mast {
+    position: relative;
+    float: left;
+    width: 31.875%;
+  }
+
+  .top, .bottom {
+    float: right;
+    width: 65.9375%;
+  }
+
+  /*.logo {
+    position: absolute;
+    top: 80px;
+    left:
   }*/
+}
+/*LARGE-ISH SCREEN*/
+
+@media screen and (max-width: 1300px) and (min-width: 601px) {
+
 }
 
 /*MEDIUM SCREEN*/
 @media screen and (max-width: 600px) {
-  .quote::before {
-    content: url("../img/logo.png");
-    display: block;
-    overflow: auto;
-    clear: both;
+
+  .logo {
     padding: 18px;
+
+  }
+
+  ul.nav {
+    overflow: auto;
   }
 
   .nav li {
@@ -79,6 +142,7 @@ ul {
 
   .quote {
     font-size: 22px;
+    text-align: center;
   }
 
   .mast {
@@ -86,23 +150,18 @@ ul {
     text-align: center;
   }
 
-  p.main {
+  /*.main p{
     text-align: left;
-  }
+  }*/
 
   .sub-head {
     text-align: center;
   }
 
-  .characters img {
-    max-width: 100%;
-    border-radius: 5px;
+  .logo-bg {
+    display: none;
   }
 
-  .characters li {
-    max-width: 33%;
-    padding: 3px;
-  }
 }
 
 /*SMALLEST SCREEN SIZE*/
@@ -111,6 +170,7 @@ ul {
     max-width: 50%;
     padding: 3px;
   }
+
 
 }
 
