@@ -75,16 +75,26 @@ img {
   .logo {
     background-image: url("../img/logo-bg.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     position: absolute;
     height: 279px;
     top: 0px;
-    vertical-align: middle;
+  }
+
+  .nav {
+    padding-top: 280px;
+    margin: 0 34.5px;
+  }
+
+  .nav li {
+    padding: 15px;
   }
 
   .logo img {
     display: block;
     margin: auto;
+    padding-top: 110px;
   }
 
   .characters li {
